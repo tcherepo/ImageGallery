@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>gallery/DSC00204.JPG</file>
+        <file>gallery/DSC00205.JPG</file>
+        <file>gallery/DSC00206.JPG</file>
+        <file>gallery/DSC00207.JPG</file>
+        <file>gallery/DSC00208.JPG</file>
+        <file>gallery/DSC00211.JPG</file>
+        <file>gallery/DSC00212.JPG</file>
+        <file>gallery/DSC00213.JPG</file>
+        <file>gallery/DSC00214.JPG</file>
+        <file>gallery/DSC00210.JPG</file>
+    </qresource>
+</RCC>
