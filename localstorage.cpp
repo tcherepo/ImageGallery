@@ -8,10 +8,8 @@
 
 LocalStorage::LocalStorage(QObject *parent) : QObject(parent)
 {
-    const QString DRIVER("QSQLITE");
-
-    QSqlDatabase db = QSqlDatabase::addDatabase(DRIVER);
-    db.setDatabaseName("localstorage");
+    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("localstorage.sqlite");
     if(!db.open())
         qWarning() << "LocalStorage cannot create database - ERROR: " << db.lastError().text();
 
