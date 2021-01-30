@@ -66,7 +66,7 @@ ApplicationWindow {
                         }
                     }
 
-                    onAccepted: { console.log("edited " + text); titleEntered(text) }
+                    onAccepted: titleEntered(text)
                 }
 
                 ColumnLayout {
