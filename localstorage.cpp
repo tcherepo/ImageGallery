@@ -43,7 +43,7 @@ bool LocalStorage::hasRecord(const QString &key)
 
 bool LocalStorage::insertRecord(ImageData* record)
 {
-    if (record->title() == "No Data") return true;
+    if (record->title() == "No Image") return true;
     if (hasRecord(record->title())) return true;
 
     QSqlQuery query;
