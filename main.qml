@@ -12,21 +12,10 @@ ApplicationWindow {
 
     Connections {
         target: galleryclient
-/*
-        function onImageReceived(image) {
-            console.log(image, image.title, image.url);
-            localstorage.insertRecord(image); dst.entry = image;
-            console.log(dst.entry, dst.entry.title, dst.entry.url);
-        }
-*/
         function onImageReceived() {
-            console.log(galleryclient.image, galleryclient.image.title, galleryclient.image.url);
             localstorage.insertRecord(galleryclient.image);
             dst.entry = galleryclient.image;
-            console.log(dst.entry, dst.entry.title, dst.entry.url);
         }
-        //function onImageReceived(entry) { console.log(entry.title, entry.url); localstorage.insertRecord(entry); dst.entry = entry; }
-        //onImageReceived: { console.log(entry.title, entry.url); localstorage.insertRecord(entry); dst.entry = entry; }
     }
 
 
@@ -58,8 +47,6 @@ ApplicationWindow {
         Tab {
             id: dst
             title: "GalleryClient"
-            //property ImageData entry
-            //property var entry: ({ title: "No Image", url: "" })
             property var entry: galleryclient.noimage;
 
             ColumnLayout {
