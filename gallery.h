@@ -6,22 +6,7 @@
 #include <QMap>
 #include <QPair>
 
-class Title : public QObject
-{
-    Q_OBJECT
-    QString m_title;
-
-    Q_PROPERTY(QString title READ title NOTIFY titleChanged)
-
-signals:
-    void titleChanged(const QString& title);
-
-public:
-    explicit Title(QObject *parent = nullptr);
-
-    QString title();
-    void setTitle(const QString& title);
-};
+#include "title.h"
 
 class Gallery : public QObject
 {

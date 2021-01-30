@@ -1,19 +1,5 @@
 #include "gallery.h"
 
-Title::Title(QObject *parent) : QObject(parent)
-{
-}
-
-QString Title::title()
-{
-    return m_title;
-}
-
-void Title::setTitle(const QString& title)
-{
-    m_title = title;
-}
-
 QMap<QString, QString> Gallery::m_gallery {
     { "Yellow Flower", "gallery/DSC00204.JPG"},
     { "Orange Flower", "gallery/DSC00205.JPG"},
@@ -31,7 +17,7 @@ Gallery::Gallery(QObject *parent) : QObject(parent)
 {
 }
 
-QList<QObject*> Gallery::getTitles()
+QList<QObject *> Gallery::getTitles()
 {
     QString title;
     QList<QObject*> result;

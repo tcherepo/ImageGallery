@@ -12,7 +12,8 @@ SOURCES += \
         galleryserver.cpp \
         imagedata.cpp \
         localstorage.cpp \
-        main.cpp
+        main.cpp \
+        title.cpp
 
 RESOURCES += qml.qrc
 
@@ -32,4 +33,5 @@ HEADERS += \
     galleryclient.h \
     galleryserver.h \
     imagedata.h \
-    localstorage.h
+    localstorage.h \
+    title.h
